@@ -4,6 +4,8 @@ RPC-based dashboard for exploring Aave protocol data across chains and pools.
 
 <img src="./src/assets/bgddash.jpg" alt="Aave dashboard UI by BGD" width="100%" height="70%">
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Faave-dao%2Fbgdash&env=ALCHEMY_API_KEY&envDescription=Alchemy%20API%20key%20for%20multi-chain%20RPC%20access%20(optional%20but%20recommended%20%E2%80%94%20server-side%20only%2C%20never%20exposed%20to%20the%20client)&envLink=https%3A%2F%2Fgithub.com%2Faave-dao%2Fbgdash%2Fblob%2Fmain%2F.env.example&project-name=aave-dashboard)
+
 ## Running locally
 
 ```
@@ -14,7 +16,7 @@ pnpm build              # production build
 pnpm start              # serve production build
 ```
 
-Works best with an Alchemy API key — it provides RPC access to all supported chains through a single key. See [`.env.example`](.env.example).
+Works best with an Alchemy API key — it provides RPC access to all supported chains through a single key. The key is server-side only and never exposed to the client. See [`.env.example`](.env.example).
 
 ## Adding a new chain
 
