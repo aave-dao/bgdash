@@ -1,6 +1,6 @@
 # Aave Dashboard
 
-RPC-based dashboard for exploring Aave reserves, eModes, and Umbrella markets across different chains and pools.
+RPC-based dashboard for exploring Aave protocol data across chains and pools.
 
 <img src="./src/assets/bgddash.jpg" alt="Aave dashboard UI by BGD" width="100%" height="70%">
 
