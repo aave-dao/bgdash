@@ -8,7 +8,7 @@ remappings = [
 ]
 fs_permissions = [{ access = "write", path = "./reports" }]
 evm_version = 'shanghai'
-solc = '0.8.20'
+solc = '0.8.27'
 auto_detect_solc = true
 
 [profile.linea]

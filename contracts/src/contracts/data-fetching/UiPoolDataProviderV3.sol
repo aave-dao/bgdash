@@ -136,7 +136,7 @@ contract UiPoolDataProviderV3 is IUiPoolDataProviderV3 {
 
     reserveData.borrowableInIsolation = reserveConfigurationMap.getBorrowableInIsolation();
 
-    reserveData.virtualAccActive = reserveConfigurationMap.getIsVirtualAccActive();
+    reserveData.virtualAccActive = true;
     reserveData.virtualUnderlyingBalance = pool.getVirtualUnderlyingBalance(reserve);
 
     reserveData.liquidationGracePeriodUntil = pool.getLiquidationGracePeriod(reserve);
@@ -209,9 +209,10 @@ contract UiPoolDataProviderV3 is IUiPoolDataProviderV3 {
             ltv: cfg.ltv,
             liquidationThreshold: cfg.liquidationThreshold,
             liquidationBonus: cfg.liquidationBonus,
-            label: pool.getEModeCategoryLabel(i),
             collateralBitmap: pool.getEModeCategoryCollateralBitmap(i),
-            borrowableBitmap: pool.getEModeCategoryBorrowableBitmap(i)
+            label: pool.getEModeCategoryLabel(i),
+            borrowableBitmap: pool.getEModeCategoryBorrowableBitmap(i),
+            ltvzeroBitmap: pool.getEModeCategoryLtvzeroBitmap(i)
           }),
           id: i
         });
