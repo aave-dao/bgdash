@@ -69,7 +69,25 @@ Addresses come from [`@bgd-labs/aave-address-book`](https://github.com/bgd-labs/
 
 ## UiPoolDataProviderV3 helper contract
 
-The dashboard reads reserve data on-chain via `UiPoolDataProviderV3` — a view-only contract that aggregates all pool state in a single RPC call. The contract source and deployment script are in [`contracts/`](contracts/).
+The dashboard reads reserve data on-chain via `UiPoolDataProviderV3` — a view-only contract that aggregates all pool state in a single RPC call. The contract source and deployment scripts live in [`contracts/`](contracts/), following the standard Foundry project layout:
+
+```
+contracts/
+  src/contracts/data-fetching/   # contract sources
+  scripts/                       # deployment scripts (.s.sol)
+  foundry.toml
+  .env.example
+```
+
+### Setup
+
+```
+cd contracts
+cp .env.example .env   # fill in RPC endpoints and etherscan API keys
+forge install
+```
+
+RPC endpoints are required for deployment and on-chain verification. See [`contracts/.env.example`](contracts/.env.example) for the full list and public defaults.
 
 ### Deploying to a new chain
 
@@ -78,15 +96,13 @@ The contract needs two Chainlink price oracle addresses:
 - `networkBaseTokenPriceInUsdProxyAggregator` — base token (e.g. ETH/USD)
 - `marketReferenceCurrencyPriceInUsdProxyAggregator` — market reference currency
 
-See [`contracts/DeployUiPoolDataProvider.s.sol`](contracts/DeployUiPoolDataProvider.s.sol) for per-chain oracle addresses.
+See [`contracts/scripts/DeployUiPoolDataProvider.s.sol`](contracts/scripts/DeployUiPoolDataProvider.s.sol) for per-chain oracle addresses.
 
 Deploy with Foundry:
 
 ```
-forge create contracts/UiPoolDataProviderV3.sol:UiPoolDataProviderV3 \
-  --constructor-args <baseTokenOracle> <marketRefOracle> \
-  --rpc-url <RPC_URL> \
-  --private-key <KEY>
+cd contracts
+make deploy-ledger contract=scripts/DeployUiPoolDataProvider.s.sol:ChainName chain=chainname
 ```
 
 ## Copyright
