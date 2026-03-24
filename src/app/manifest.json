@@ -1,0 +1,17 @@
+{
+  "short_name": "Aave_dashboard",
+  "name": "Aave dashboard UI developed by BGD labs",
+  "description": "UI for exploring Aave markets reserves on a single page.",
+  "iconPath": "icon.svg",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "32x32",
+      "type": "image/svg"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

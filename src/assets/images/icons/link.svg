@@ -1,0 +1,11 @@
+<svg width="13" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <line x1="7" y1="2.5" y2="2.5" stroke="#101423"/>
+  <line x1="10.5" y1="6" x2="10.5" y2="13" stroke="#101423"/>
+  <line x1="0.5" y1="13" x2="0.5" y2="2" stroke="#101423"/>
+  <line y1="12.5" x2="11" y2="12.5" stroke="#101423"/>
+  <g class="arrow_group">
+    <line x1="12.5" y1="2.18557e-08" x2="12.5" y2="5" stroke="#101423"/>
+    <path d="M5 7.97021L12 1" stroke="#101423"/>
+    <line x1="13" y1="0.5" x2="8" y2="0.5" stroke="#101423"/>
+  </g>
+</svg>
