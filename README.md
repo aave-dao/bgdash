@@ -84,7 +84,7 @@ contracts/
 ```
 cd contracts
 cp .env.example .env   # fill in RPC endpoints and etherscan API keys
-forge install
+forge install bgd-labs/aave-v3-origin foundry-rs/forge-std
 ```
 
 RPC endpoints are required for deployment and on-chain verification. See [`contracts/.env.example`](contracts/.env.example) for the full list and public defaults.
