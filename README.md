@@ -105,6 +105,8 @@ cd contracts
 make deploy-ledger contract=scripts/DeployUiPoolDataProvider.s.sol:ChainName chain=chainname
 ```
 
-## Copyright
+## License
 
-2024 BGD Labs
+This project is licensed under the [MIT License](./LICENSE).
+
+Copyright 2026 Aave DAO
