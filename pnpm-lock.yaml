@@ -8,9 +8,9 @@ importers:
 
   .:
     dependencies:
-      '@bgd-labs/aave-address-book':
-        specifier: ^4.44.5
-        version: 4.44.6(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))
+      '@aave-dao/aave-address-book':
+        specifier: 4.47.14
+        version: 4.47.14(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))
       '@bgd-labs/react-web3-icons':
         specifier: ^1.61.0
         version: 1.61.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -212,6 +212,11 @@ importers:
         version: 8.24.0(eslint@9.20.0)(typescript@5.7.3)
 
 packages:
+
+  '@aave-dao/aave-address-book@4.47.14':
+    resolution: {integrity: sha512-KO8Dvuwi34rX/bsRYyY6FhhJpkBY7bwuHZNOypSqlKaLK++fZfUZZSlRQ8BKn33BGZaihCInChpdjRBgByJqFQ==}
+    peerDependencies:
+      viem: ^2.23.5
 
   '@adraffy/ens-normalize@1.11.0':
     resolution: {integrity: sha512-/3DDPKHqqIqxUULp8yP4zODUY1i+2xvVWsv8A79xGWdCAG+8sb0hRh0Rk2QyOJUnnbyPUAZYcpBuRe3nS2OIUg==}
@@ -770,11 +775,6 @@ packages:
   '@babel/types@7.26.8':
     resolution: {integrity: sha512-eUuWapzEGWFEpHFxgEaBG8e3n6S8L3MSu0oda755rOfabWPnh0Our1AozNFVUxGFIhbKgd1ksprsoDGMinTOTA==}
     engines: {node: '>=6.9.0'}
-
-  '@bgd-labs/aave-address-book@4.44.6':
-    resolution: {integrity: sha512-mLjJDE339gkKwIMtOGZ4eRbIkOOm2B4DP+OA+Efh9owcgkRhn3/AW99RnsLS/VGZzGdkRPFJMDRpUUctGKw0Kw==}
-    peerDependencies:
-      viem: ^2.23.5
 
   '@bgd-labs/react-web3-icons@1.61.0':
     resolution: {integrity: sha512-aaLQJlJVvCH9djHLzBVJqbZ4B9P9SMrIpNX/NENSsqWnxZu7tAEokly88gnXyznyl368eeaVD4cu/WAp6cyfgw==}
@@ -3177,6 +3177,10 @@ packages:
 
 snapshots:
 
+  '@aave-dao/aave-address-book@4.47.14(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))':
+    dependencies:
+      viem: 2.45.1(typescript@5.7.3)(zod@3.24.1)
+
   '@adraffy/ens-normalize@1.11.0': {}
 
   '@ampproject/remapping@2.3.0':
@@ -3906,10 +3910,6 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
-
-  '@bgd-labs/aave-address-book@4.44.6(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))':
-    dependencies:
-      viem: 2.45.1(typescript@5.7.3)(zod@3.24.1)
 
   '@bgd-labs/react-web3-icons@1.61.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:

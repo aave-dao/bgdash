@@ -1,4 +1,4 @@
-import { IUiPoolDataProvider_ABI } from '@bgd-labs/aave-address-book/abis';
+import { IUiPoolDataProvider_ABI } from '@aave-dao/aave-address-book/abis';
 import { Address } from 'viem';
 import { readContract } from 'viem/actions';
 

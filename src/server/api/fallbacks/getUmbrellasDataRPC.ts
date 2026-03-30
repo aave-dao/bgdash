@@ -3,7 +3,7 @@ import {
   AaveV3Ethereum,
   // UmbrellaBaseSepolia,
   UmbrellaEthereum,
-} from '@bgd-labs/aave-address-book';
+} from '@aave-dao/aave-address-book';
 import { Address } from 'viem';
 import { readContract } from 'viem/actions';
 
