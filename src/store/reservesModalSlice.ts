@@ -84,6 +84,7 @@ export const createReservesModalSlice: StoreSlice<IReserveModalSlice> = (
   [poolsWithChainId.AaveV3Plasma]: eventsBaseState,
   [poolsWithChainId.AaveV3Mantle]: eventsBaseState,
   [poolsWithChainId.AaveV3Megaeth]: eventsBaseState,
+  [poolsWithChainId.AaveV3XLayer]: eventsBaseState,
   // TIP: EVENTS FOR NEW POOL SHOULD BE HERE
 
   setEventsTimestamp: ({

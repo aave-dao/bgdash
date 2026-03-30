@@ -1,4 +1,4 @@
-import tokenlist from '@bgd-labs/aave-address-book/tokenlist';
+import tokenlist from '@aave-dao/aave-address-book/tokenlist';
 import { Box, useTheme } from '@mui/system';
 import React from 'react';
 
