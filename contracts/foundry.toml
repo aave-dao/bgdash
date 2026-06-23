@@ -63,6 +63,7 @@ ink = "${RPC_INK}"
 plasma = "${RPC_PLASMA}"
 xlayer = "${RPC_XLAYER}"
 megaeth =  "${RPC_MEGAETH}"
+monad = "${RPC_MONAD}"
 
 [etherscan]
 mainnet = { key="${ETHERSCAN_API_KEY_MAINNET}", chainId=1 }
@@ -88,5 +89,6 @@ mantle={key="${ETHERSCAN_API_KEY_MANTLE}", chain=5000, url='https://api.mantlesc
 ink={key="${ETHERSCAN_API_KEY_INK}", chain=57073, url='https://api.routescan.io/v2/network/mainnet/evm/57073/etherscan'}
 xlayer={key="any", chain=196, url='https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/xlayer'}
 megaeth = { key="${ETHERSCAN_API_KEY_MAINNET}", chainId=4326 }
+monad = { key="${ETHERSCAN_API_KEY_MAINNET}", chainId=143 }
 
 # See more config options https://github.com/gakonst/foundry/tree/master/config

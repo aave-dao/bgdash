@@ -22,14 +22,34 @@ import {
   sonic,
   xLayer,
   zksync,
+  monad,
 } from 'viem/chains';
 
 import { Events, ReserveItem } from './types';
 
 const allChains = [
-  mainnet, optimism, gnosis, polygon, fantom, metis, base, arbitrum,
-  avalanche, bsc, scroll, zksync, linea, sonic, celo, soneium, ink,
-  plasma, mantle, megaeth, xLayer,
+  mainnet,
+  optimism,
+  gnosis,
+  polygon,
+  fantom,
+  metis,
+  base,
+  arbitrum,
+  avalanche,
+  bsc,
+  scroll,
+  zksync,
+  linea,
+  sonic,
+  celo,
+  soneium,
+  ink,
+  plasma,
+  mantle,
+  megaeth,
+  xLayer,
+  monad,
 ] as const;
 
 export const viemChains: Record<number, Chain> = Object.fromEntries(
@@ -59,6 +79,7 @@ export const BlockPeriod: Record<number, number> = {
   [mantle.id]: 1,
   [megaeth.id]: 1,
   [xLayer.id]: 3,
+  [monad.id]: 1,
   // TIP: average block time for NEW CHAIN SHOULD BE HERE
 };
 
@@ -375,6 +396,16 @@ export const marketHelper = {
       COLLECTOR: markets.AaveV3XLayer.COLLECTOR,
     },
   },
+  [monad.id]: {
+    [PoolsWithVersions.AAVEV3]: {
+      POOL: markets.AaveV3Monad.POOL,
+      UI_POOL_DATA_PROVIDER: markets.AaveV3Monad.UI_POOL_DATA_PROVIDER,
+      POOL_ADDRESSES_PROVIDER: markets.AaveV3XLayer.POOL_ADDRESSES_PROVIDER,
+      AAVE_PROTOCOL_DATA_PROVIDER_ADDRESS:
+        markets.AaveV3XLayer.AAVE_PROTOCOL_DATA_PROVIDER,
+      COLLECTOR: markets.AaveV3XLayer.COLLECTOR,
+    },
+  },
   // TIP: NEW CHAIN WITH POOL ADDRESSES SHOULD BE HERE
 } satisfies Record<
   `${number}`,
@@ -416,6 +447,7 @@ export const poolsWithChainId = {
   AaveV3Mantle: `${markets.AaveV3Mantle.POOL}_${markets.AaveV3Mantle.CHAIN_ID}`,
   AaveV3Megaeth: `${markets.AaveV3MegaEth.POOL}_${markets.AaveV3MegaEth.CHAIN_ID}`,
   AaveV3XLayer: `${markets.AaveV3XLayer.POOL}_${markets.AaveV3XLayer.CHAIN_ID}`,
+  AaveV3Monad: `${markets.AaveV3Monad.POOL}_${markets.AaveV3Monad.CHAIN_ID}`,
   // TIP: NEW POOL WITH CHAIN ID SHOULD BE HERE
 } as const;
 
@@ -446,6 +478,7 @@ export type PoolsWithEvents = {
   [poolsWithChainId.AaveV3Mantle]: Events;
   [poolsWithChainId.AaveV3Megaeth]: Events;
   [poolsWithChainId.AaveV3XLayer]: Events;
+  [poolsWithChainId.AaveV3Monad]: Events;
   // TIP: NEED TO ADD TYPE FOR EVENTS FOR EVERY NEW POOL
 };
 
