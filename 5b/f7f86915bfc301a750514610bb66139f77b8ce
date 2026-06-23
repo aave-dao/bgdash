@@ -1,0 +1,26 @@
+contracts/foundry.toml
+  h_739c25e72c37fb 66,92
+contracts/scripts/DeployUiPoolDataProvider.s.sol
+  h_739c25e72c37fb 395-411
+src/server/api/fallbacks/utils/chains.ts
+  h_739c25e72c37fb 12
+contracts/Makefile
+  h_739c25e72c37fb 22
+src/store/reservesModalSlice.ts
+  h_739c25e72c37fb 88
+README.md
+  h_739c25e72c37fb 7,46
+src/constants.ts
+  h_739c25e72c37fb 25,52,82,399-408,450,481
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.10",
+  "base_commit_sha": "5bf7f86915bfc301a750514610bb66139f77b8ce",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
