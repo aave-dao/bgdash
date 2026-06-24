@@ -9,11 +9,11 @@ importers:
   .:
     dependencies:
       '@aave-dao/aave-address-book':
-        specifier: 4.47.14
-        version: 4.47.14(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))
-      '@bgd-labs/react-web3-icons':
-        specifier: ^1.61.0
-        version: 1.61.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: 4.55.3
+        version: 4.55.3(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))
+      '@aave-dao/react-web3-icons':
+        specifier: ^1.52.2
+        version: 1.52.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@emotion/cache':
         specifier: ^11.14.0
         version: 11.14.0
@@ -213,10 +213,17 @@ importers:
 
 packages:
 
-  '@aave-dao/aave-address-book@4.47.14':
-    resolution: {integrity: sha512-KO8Dvuwi34rX/bsRYyY6FhhJpkBY7bwuHZNOypSqlKaLK++fZfUZZSlRQ8BKn33BGZaihCInChpdjRBgByJqFQ==}
+  '@aave-dao/aave-address-book@4.55.3':
+    resolution: {integrity: sha512-oQbV2TIy0aIPTBai8vCg6aUUKsCpbGg9WSeT4u/y6R6COADl3gv7BlQarnaNAByR32E+xMZeT/DDveH1okva1g==}
     peerDependencies:
       viem: ^2.23.5
+
+  '@aave-dao/react-web3-icons@1.52.2':
+    resolution: {integrity: sha512-fFoyoc1QMOrbbGUVIOgPPEdoPTseP9OXop0MxTQwNruNQ49wZtB0USVs2j8gbnw3YjS6BkoxFylFjBLwkXaCcg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      react: '>=18.3.1 || ^19.0.0'
+      react-dom: '>=18.3.1 || ^19.0.0'
 
   '@adraffy/ens-normalize@1.11.0':
     resolution: {integrity: sha512-/3DDPKHqqIqxUULp8yP4zODUY1i+2xvVWsv8A79xGWdCAG+8sb0hRh0Rk2QyOJUnnbyPUAZYcpBuRe3nS2OIUg==}
@@ -775,13 +782,6 @@ packages:
   '@babel/types@7.26.8':
     resolution: {integrity: sha512-eUuWapzEGWFEpHFxgEaBG8e3n6S8L3MSu0oda755rOfabWPnh0Our1AozNFVUxGFIhbKgd1ksprsoDGMinTOTA==}
     engines: {node: '>=6.9.0'}
-
-  '@bgd-labs/react-web3-icons@1.61.0':
-    resolution: {integrity: sha512-aaLQJlJVvCH9djHLzBVJqbZ4B9P9SMrIpNX/NENSsqWnxZu7tAEokly88gnXyznyl368eeaVD4cu/WAp6cyfgw==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      react: '>=18.3.1 || ^19.0.0'
-      react-dom: '>=18.3.1 || ^19.0.0'
 
   '@emotion/babel-plugin@11.13.5':
     resolution: {integrity: sha512-pxHCpT2ex+0q+HH91/zsdHkw/lXd468DIN2zvfvLtPKLLMo6gQj7oLObq8PhkrxOZb/gGCq03S3Z7PDhS8pduQ==}
@@ -3177,9 +3177,17 @@ packages:
 
 snapshots:
 
-  '@aave-dao/aave-address-book@4.47.14(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))':
+  '@aave-dao/aave-address-book@4.55.3(viem@2.45.1(typescript@5.7.3)(zod@3.24.1))':
     dependencies:
       viem: 2.45.1(typescript@5.7.3)(zod@3.24.1)
+
+  '@aave-dao/react-web3-icons@1.52.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@loadable/component': 5.16.4(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      tailwind-merge: 2.6.0
+      to-words: 4.1.0
 
   '@adraffy/ens-normalize@1.11.0': {}
 
@@ -3910,14 +3918,6 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
-
-  '@bgd-labs/react-web3-icons@1.61.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@loadable/component': 5.16.4(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      tailwind-merge: 2.6.0
-      to-words: 4.1.0
 
   '@emotion/babel-plugin@11.13.5':
     dependencies:

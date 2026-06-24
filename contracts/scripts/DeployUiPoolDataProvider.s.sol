@@ -392,3 +392,20 @@ contract Megaeth is DeployAaveV3MarketBatchedBase {
     return 0xcA4e254D95637DE95E2a2F79244b03380d697feD;
   }
 }
+
+// make deploy-ledger contract=scripts/DeployUiPoolDataProvider.s.sol:Monad chain=monad
+// verify-command: npx catapulta-verify -b broadcast/DeployUiPoolDataProvider.s.sol/143/run-latest.json
+contract Monad is DeployAaveV3MarketBatchedBase {
+  function getNetworkBaseTokenPriceInUsdProxyAggregator() public pure override returns (address) {
+    return 0xBcD78f76005B7515837af6b50c7C52BCf73822fb;
+  }
+  function getMarketReferenceCurrencyPriceInUsdProxyAggregator()
+    public
+    pure
+    override
+    returns (address)
+  {
+    return 0xBcD78f76005B7515837af6b50c7C52BCf73822fb;
+  }
+}
+

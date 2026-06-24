@@ -1,4 +1,4 @@
-import { getChainName } from '@bgd-labs/react-web3-icons/dist/utils';
+import { getChainName } from '@aave-dao/react-web3-icons/dist/utils';
 import { Box, useTheme } from '@mui/system';
 import React, { memo } from 'react';
 

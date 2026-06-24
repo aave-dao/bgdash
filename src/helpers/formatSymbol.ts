@@ -1,4 +1,4 @@
-import { formatSymbolForIcon } from '@bgd-labs/react-web3-icons/dist/utils';
+import { formatSymbolForIcon } from '@aave-dao/react-web3-icons/dist/utils';
 export function formatSymbol(symbol: string) {
   const formatted = formatSymbolForIcon({ symbol });
   if (typeof formatted === 'string') {

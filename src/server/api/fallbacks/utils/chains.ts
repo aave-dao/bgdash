@@ -9,6 +9,7 @@ const alchemySubdomains: Record<number, string> = {
   56: 'bnb-mainnet',
   100: 'gnosis-mainnet',
   137: 'polygon-mainnet',
+  143: 'monad-mainnet',
   146: 'sonic-mainnet',
   324: 'zksync-mainnet',
   1088: 'metis-mainnet',

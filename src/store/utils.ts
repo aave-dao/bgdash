@@ -1,4 +1,4 @@
-import { getChainName } from '@bgd-labs/react-web3-icons/dist/utils/index';
+import { getChainName } from '@aave-dao/react-web3-icons/dist/utils/index';
 
 import { marketHelper, ReservePool, ReserveVersion } from '../constants';
 import { formatSymbol } from '../helpers/formatSymbol';
