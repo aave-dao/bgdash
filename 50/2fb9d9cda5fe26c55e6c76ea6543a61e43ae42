@@ -1,0 +1,26 @@
+src/store/reservesModalSlice.ts
+  s_eca8e23e447393::t_4f438c7ec81094 88
+src/constants.ts
+  s_eca8e23e447393::t_57080742bd9c68 403-404,406-407
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "502fb9d9cda5fe26c55e6c76ea6543a61e43ae42",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_eca8e23e447393": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4173b9df-9cf3-4aa3-9a08-b149654b069d",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
