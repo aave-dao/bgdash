@@ -1,0 +1,36 @@
+src/constants.ts
+  h_739c25e72c37fb 403
+src/helpers/eModeTableHelpers.tsx
+  h_739c25e72c37fb 3
+src/components/BrandIcon.tsx
+  h_739c25e72c37fb 3-5
+src/helpers/csvExport.ts
+  h_739c25e72c37fb 1
+src/components/TokenIcon.tsx
+  h_739c25e72c37fb 1
+src/components/ChainIcon.tsx
+  h_739c25e72c37fb 3-5
+src/helpers/formatSymbol.ts
+  h_739c25e72c37fb 1
+src/helpers/sorting.ts
+  h_739c25e72c37fb 1
+src/store/utils.ts
+  h_739c25e72c37fb 1
+src/app/layout.tsx
+  h_739c25e72c37fb 1
+src/components/Dashboard/Cols/SymbolCol.tsx
+  h_739c25e72c37fb 1
+src/components/SingleTokenIcon.tsx
+  h_739c25e72c37fb 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.11",
+  "base_commit_sha": "16c2e7c624f0368e3966d241637f6c6d54b5c4c5",
+  "prompts": {},
+  "humans": {
+    "h_739c25e72c37fb": {
+      "author": "DhairyaSethi <55102840+DhairyaSethi@users.noreply.github.com>"
+    }
+  }
+}
