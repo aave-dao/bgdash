@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@aave-dao/aave-address-book": "4.55.2",
-    "@bgd-labs/react-web3-icons": "^1.61.0",
+    "@aave-dao/react-web3-icons": "^1.52.2",
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/server": "^11.11.0",

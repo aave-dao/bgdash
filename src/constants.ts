@@ -399,7 +399,8 @@ export const marketHelper = {
   [monad.id]: {
     [PoolsWithVersions.AAVEV3]: {
       POOL: markets.AaveV3Monad.POOL,
-      UI_POOL_DATA_PROVIDER: markets.AaveV3Monad.UI_POOL_DATA_PROVIDER,
+      UI_POOL_DATA_PROVIDER:
+        '0x6bb7a212910682dcfdbd5bcbb3e28fb4e8da10ee' as const,
       POOL_ADDRESSES_PROVIDER: markets.AaveV3XLayer.POOL_ADDRESSES_PROVIDER,
       AAVE_PROTOCOL_DATA_PROVIDER_ADDRESS:
         markets.AaveV3XLayer.AAVE_PROTOCOL_DATA_PROVIDER,

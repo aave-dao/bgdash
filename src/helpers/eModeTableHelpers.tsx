@@ -1,6 +1,6 @@
 'use client';
 
-import { getChainName } from '@bgd-labs/react-web3-icons/dist/utils';
+import { getChainName } from '@aave-dao/react-web3-icons/dist/utils';
 import { Box } from '@mui/system';
 import React from 'react';
 

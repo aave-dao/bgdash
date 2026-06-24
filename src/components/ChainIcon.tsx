@@ -1,8 +1,8 @@
 'use client';
 
-import { Web3Icon } from '@bgd-labs/react-web3-icons';
-import { chainsIconsPack } from '@bgd-labs/react-web3-icons/dist/iconsPacks/chainsIconsPack';
-import { IconComponentBaseProps } from '@bgd-labs/react-web3-icons/dist/utils/index';
+import { Web3Icon } from '@aave-dao/react-web3-icons';
+import { chainsIconsPack } from '@aave-dao/react-web3-icons/dist/iconsPacks/chainsIconsPack';
+import { IconComponentBaseProps } from '@aave-dao/react-web3-icons/dist/utils/index';
 import { Box, SxProps } from '@mui/system';
 
 import { CustomSkeleton } from './CustomSkeleton';

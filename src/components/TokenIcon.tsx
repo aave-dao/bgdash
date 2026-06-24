@@ -1,4 +1,4 @@
-import { formatSymbolForIcon } from '@bgd-labs/react-web3-icons/dist/utils';
+import { formatSymbolForIcon } from '@aave-dao/react-web3-icons/dist/utils';
 import { Box, SxProps } from '@mui/system';
 
 import SingleTokenIcon, { TokenIconProps } from './SingleTokenIcon';
